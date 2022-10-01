@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B302A178E87D374F1D9314 /* Pods_Kakako_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */; };
+		3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73428E8743400C9E91C /* AppDelegate.swift */; };
+		3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73628E8743400C9E91C /* SceneDelegate.swift */; };
+		3B15E73928E8743400C9E91C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73828E8743400C9E91C /* LoginVC.swift */; };
+		3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73D28E8743500C9E91C /* Assets.xcassets */; };
+		3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */; };
+		3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF267B428E87EDA002EFE1D /* Main.storyboard */; };
+		3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B628E88321002EFE1D /* SignUpVC.swift */; };
+		3BF267B928E883B3002EFE1D /* onBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B828E883B3002EFE1D /* onBoardingVC.swift */; };
+		3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267BD28E88658002EFE1D /* StringLiterals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B15E73128E8743400C9E91C /* Kakako-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kakako-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15E73428E8743400C9E91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B15E73628E8743400C9E91C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B15E73828E8743400C9E91C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3B15E73D28E8743500C9E91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B15E74028E8743500C9E91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B15E74228E8743500C9E91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF267B428E87EDA002EFE1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3BF267B628E88321002EFE1D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		3BF267B828E883B3002EFE1D /* onBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingVC.swift; sourceTree = "<group>"; };
+		3BF267BD28E88658002EFE1D /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
+		6E63AC4FEC2FE2C07CEA2441 /* Pods-Kakako-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		D97535201AC86DDE4705DC1A /* Pods-Kakako-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.release.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kakako_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B15E72E28E8743400C9E91C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B302A178E87D374F1D9314 /* Pods_Kakako_Clone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B15E72828E8743400C9E91C = {
+			isa = PBXGroup;
+			children = (
+				3B15E73328E8743400C9E91C /* Kakako-Clone */,
+				3B15E73228E8743400C9E91C /* Products */,
+				B8B191BD0845713FD4C77250 /* Pods */,
+				85D397B0A1622E133F372F59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B15E73228E8743400C9E91C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B15E73128E8743400C9E91C /* Kakako-Clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B15E73328E8743400C9E91C /* Kakako-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				3BF267B128E87C56002EFE1D /* Application */,
+				3BF267B228E87CB1002EFE1D /* Presentation */,
+				3BF267BA28E88621002EFE1D /* Global */,
+				3BF267B428E87EDA002EFE1D /* Main.storyboard */,
+				3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */,
+				3B15E74228E8743500C9E91C /* Info.plist */,
+			);
+			path = "Kakako-Clone";
+			sourceTree = "<group>";
+		};
+		3BF267B128E87C56002EFE1D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3B15E73428E8743400C9E91C /* AppDelegate.swift */,
+				3B15E73628E8743400C9E91C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3BF267B228E87CB1002EFE1D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3BF267B328E87E76002EFE1D /* Authentication */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3BF267B328E87E76002EFE1D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3B15E73828E8743400C9E91C /* LoginVC.swift */,
+				3BF267B628E88321002EFE1D /* SignUpVC.swift */,
+				3BF267B828E883B3002EFE1D /* onBoardingVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3BF267BA28E88621002EFE1D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3BF267BC28E88642002EFE1D /* Literals */,
+				3BF267BB28E88639002EFE1D /* Resources */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3BF267BB28E88639002EFE1D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B15E73D28E8743500C9E91C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BF267BC28E88642002EFE1D /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				3BF267BD28E88658002EFE1D /* StringLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		85D397B0A1622E133F372F59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8B191BD0845713FD4C77250 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E63AC4FEC2FE2C07CEA2441 /* Pods-Kakako-Clone.debug.xcconfig */,
+				D97535201AC86DDE4705DC1A /* Pods-Kakako-Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B15E73028E8743400C9E91C /* Kakako-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B15E74528E8743500C9E91C /* Build configuration list for PBXNativeTarget "Kakako-Clone" */;
+			buildPhases = (
+				22ED7EF84FFB38CC3F8AAECF /* [CP] Check Pods Manifest.lock */,
+				3B15E72D28E8743400C9E91C /* Sources */,
+				3B15E72E28E8743400C9E91C /* Frameworks */,
+				3B15E72F28E8743400C9E91C /* Resources */,
+				B24F1D6B7E20E1C9308F3D17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kakako-Clone";
+			productName = "Kakako-Clone";
+			productReference = 3B15E73128E8743400C9E91C /* Kakako-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B15E72928E8743400C9E91C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3B15E73028E8743400C9E91C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B15E72C28E8743400C9E91C /* Build configuration list for PBXProject "Kakako-Clone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B15E72828E8743400C9E91C;
+			productRefGroup = 3B15E73228E8743400C9E91C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B15E73028E8743400C9E91C /* Kakako-Clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B15E72F28E8743400C9E91C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */,
+				3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */,
+				3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22ED7EF84FFB38CC3F8AAECF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kakako-Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24F1D6B7E20E1C9308F3D17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B15E72D28E8743400C9E91C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */,
+				3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */,
+				3B15E73928E8743400C9E91C /* LoginVC.swift in Sources */,
+				3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */,
+				3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */,
+				3BF267B928E883B3002EFE1D /* onBoardingVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B15E74028E8743500C9E91C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B15E74328E8743500C9E91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B15E74428E8743500C9E91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B15E74628E8743500C9E91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E63AC4FEC2FE2C07CEA2441 /* Pods-Kakako-Clone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 665TA4D5B9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Kakako-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B15E74728E8743500C9E91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D97535201AC86DDE4705DC1A /* Pods-Kakako-Clone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 665TA4D5B9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Kakako-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B15E72C28E8743400C9E91C /* Build configuration list for PBXProject "Kakako-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15E74328E8743500C9E91C /* Debug */,
+				3B15E74428E8743500C9E91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B15E74528E8743500C9E91C /* Build configuration list for PBXNativeTarget "Kakako-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B15E74628E8743500C9E91C /* Debug */,
+				3B15E74728E8743500C9E91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B15E72928E8743400C9E91C /* Project object */;
+}
