@@ -6,14 +6,37 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+    //MARK: UIComponents
+    private let testLabel: UILabel = {
+        let lb = UILabel()
+        lb.text = "1차 세미나🍏"
+        return lb
+    }()
+    
+    //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUI()
+        setLayout()
     }
+}
 
-
+//MARK: Extension
+extension ViewController {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setLayout() {
+        view.addSubview(testLabel)
+        
+        testLabel.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
 }
 
