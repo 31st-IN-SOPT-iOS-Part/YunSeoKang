@@ -12,7 +12,7 @@ class onBoardingVC: UIViewController {
     //MARK: Properties
     var name: String?
 
-    //MARK: UIComponents
+    //MARK: UI Components
     private let welcomeLabel: UILabel = {
         let lb = UILabel()
         lb.text = "님 환영합니다"
@@ -20,26 +20,35 @@ class onBoardingVC: UIViewController {
         return lb
     }()
     
-    private let startKakaoButton: UIButton = {
-        let btn = UIButton()
-        btn.setTitle(I18N.Auth.startKakaoButton, for: .normal)
+    private let checkButton: AuthButton = {
+        let btn = AuthButton()
+        btn.setTitle(I18N.Auth.checkButton, for: .normal)
         btn.backgroundColor = .kakaoLogin
-        btn.layer.cornerRadius = 4
-        btn.setTitleColor(.black, for: .normal)
+        btn.isEnabled = true
         return btn
     }()
     
     //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
+        setAddTarget()
         setLayout()
     }
 }
 
 //MARK: Extension
 extension onBoardingVC {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setAddTarget() {
+        checkButton.addTarget(self, action: #selector(touchCheckButton), for: .touchUpInside)
+    }
+    
     private func setLayout() {
-        view.addSubViews(welcomeLabel, startKakaoButton)
+        view.addSubViews(welcomeLabel, checkButton)
         
         welcomeLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -48,11 +57,22 @@ extension onBoardingVC {
         
         let width = UIScreen.main.bounds.width
         
-        startKakaoButton.snp.makeConstraints { make in
+        checkButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(welcomeLabel.snp.bottom).offset(100)
             make.height.equalTo(width * (44/375))
         }
+    }
+    
+    private func dismissOnboarding() {
+        self.dismiss(animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+    }
+    
+    @objc
+    private func touchCheckButton() {
+        dismissOnboarding()
     }
 }

@@ -13,7 +13,7 @@ class LoginVC: UIViewController {
     //MARK: Properties
     let width = UIScreen.main.bounds.width
     
-    //MARK: UIComponents
+    //MARK: UI Components
     private let startKakao: UILabel = {
         let lb = UILabel()
         lb.text = I18N.Auth.startKakao
@@ -32,45 +32,29 @@ class LoginVC: UIViewController {
         return lb
     }()
     
-    private let emailNumberTextField: UITextField = {
-        let tf = UITextField()
+    private let emailNumberTextField: AuthTextField = {
+        let tf = AuthTextField()
         tf.placeholder = I18N.Auth.emailOrPhone
-        tf.textColor = .black
-        tf.font = .systemFont(ofSize: 17, weight: .regular)
         return tf
     }()
     
-    private let passwordTextField: UITextField = {
-        let tf = UITextField()
+    private let passwordTextField: AuthTextField = {
+        let tf = AuthTextField()
         tf.placeholder = I18N.Auth.password
-        tf.textColor = .black
-        tf.font = .systemFont(ofSize: 17, weight: .regular)
+        tf.isSecureTextEntry = true
         return tf
     }()
     
-    private lazy var textFieldStackView: UIStackView = {
-        let sv = UIStackView()
-        sv.alignment = .center
-        sv.axis = .vertical
-        sv.distribution = .fill
-        return sv
-    }()
-    
-    private let kakaLoginButton: UIButton = {
-        let btn = UIButton()
+    private let kakaoLoginButton: AuthButton = {
+        let btn = AuthButton()
         btn.setTitle(I18N.Auth.loginKakao, for: .normal)
-        btn.setTitleColor(UIColor.black, for: .normal)
-        btn.backgroundColor = .systemGray6
-        btn.layer.cornerRadius = 4
         return btn
     }()
     
-    private let makeAccountButton: UIButton = {
-        let btn = UIButton()
+    private lazy var makeAccountButton: AuthButton = {
+        let btn = AuthButton()
         btn.setTitle(I18N.Auth.newAccount, for: .normal)
-        btn.setTitleColor(UIColor.black, for: .normal)
-        btn.backgroundColor = .systemGray6
-        btn.layer.cornerRadius = 4
+        btn.isEnabled = true
         return btn
     }()
     
@@ -85,15 +69,27 @@ class LoginVC: UIViewController {
     //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
         setLayout()
+        setAddTarget()
     }
 }
 
 //MARK: Extension
 extension LoginVC {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setAddTarget() {
+        kakaoLoginButton.addTarget(self, action: #selector(touchUpOnboarding), for: .touchUpInside)
+        makeAccountButton.addTarget(self, action: #selector(touchUpSignup), for: .touchUpInside)
+        emailNumberTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
     
     private func setLayout() {
-        view.addSubViews(startKakao, descriptionLogin, emailNumberTextField, passwordTextField, kakaLoginButton, makeAccountButton, findAccountLabel)
+        view.addSubViews(startKakao, descriptionLogin, emailNumberTextField, passwordTextField, kakaoLoginButton, makeAccountButton, findAccountLabel)
         
         startKakao.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).inset(60)
@@ -119,7 +115,7 @@ extension LoginVC {
             make.height.equalTo(width * (44/375))
         }
         
-        kakaLoginButton.snp.makeConstraints { make in
+        kakaoLoginButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(passwordTextField.snp.bottom).offset(30)
@@ -129,13 +125,46 @@ extension LoginVC {
         makeAccountButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
-            make.top.equalTo(kakaLoginButton.snp.bottom).offset(20)
+            make.top.equalTo(kakaoLoginButton.snp.bottom).offset(16)
             make.height.equalTo(width * (44/375))
         }
         
         findAccountLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(makeAccountButton.snp.bottom).offset(16)
+        }
+    }
+    
+    private func pushToSignUpView() {
+        let nextVC = SignUpVC()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    private func presentToOnboardingView() {
+        let nextVC = onBoardingVC()
+        nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(nextVC, animated: true)
+    }
+    
+    @objc
+    private func touchUpSignup() {
+        pushToSignUpView()
+    }
+    
+    @objc
+    private func touchUpOnboarding() {
+        presentToOnboardingView()
+    }
+    
+    @objc
+    private func textFieldDidChange() {
+        if emailNumberTextField.hasText,
+           passwordTextField.hasText {
+            kakaoLoginButton.isEnabled = true
+            kakaoLoginButton.backgroundColor = .kakaoLogin
+        } else {
+            kakaoLoginButton.isEnabled = false
+            kakaoLoginButton.backgroundColor = .systemGray6
         }
     }
 }

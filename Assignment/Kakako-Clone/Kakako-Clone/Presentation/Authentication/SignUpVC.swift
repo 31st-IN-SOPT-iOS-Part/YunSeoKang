@@ -12,57 +12,63 @@ class SignUpVC: UIViewController {
     //MARK: Properties
     let width = UIScreen.main.bounds.width
 
-    //MARK: UIComponents
+    //MARK: UI Components
     private let startKakao: UILabel = {
         let lb = UILabel()
         lb.text = I18N.Auth.startKakao
         lb.textColor = .black
-        lb.font = .systemFont(ofSize: 18, weight: .medium)
+        lb.font = .systemFont(ofSize: 22, weight: .medium)
         return lb
     }()
     
-    private let emailNumberTextField: UITextField = {
-        let tf = UITextField()
+    private let emailNumberTextField: AuthTextField = {
+        let tf = AuthTextField()
         tf.placeholder = I18N.Auth.emailOrPhone
-        tf.textColor = .black
-        tf.font = .systemFont(ofSize: 17, weight: .regular)
         return tf
     }()
     
-    private let passwordTextField: UITextField = {
-        let tf = UITextField()
+    private let passwordTextField: AuthTextField = {
+        let tf = AuthTextField()
         tf.placeholder = I18N.Auth.password
-        tf.textColor = .black
-        tf.font = .systemFont(ofSize: 17, weight: .regular)
+        tf.isSecureTextEntry = true
         return tf
     }()
     
-    private let checkPasswordTextField: UITextField = {
-        let tf = UITextField()
+    private let checkPasswordTextField: AuthTextField = {
+        let tf = AuthTextField()
         tf.placeholder = I18N.Auth.checkPassword
-        tf.textColor = .black
-        tf.font = .systemFont(ofSize: 17, weight: .regular)
+        tf.isSecureTextEntry = true
         return tf
     }()
     
-    private let makeAccountButton: UIButton = {
-        let btn = UIButton()
+    private let makeAccountButton: AuthButton = {
+        let btn = AuthButton()
         btn.setTitle(I18N.Auth.newAccount, for: .normal)
-        btn.setTitleColor(UIColor.black, for: .normal)
-        btn.backgroundColor = .systemGray6
-        btn.layer.cornerRadius = 4
         return btn
     }()
     
     //MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
         setLayout()
+        setAddTarget()
     }
 }
 
 //MARK: Extension
 extension SignUpVC {
+    private func setUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func setAddTarget() {
+        makeAccountButton.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
+        emailNumberTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        checkPasswordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
     private func setLayout() {
         view.addSubViews(startKakao, emailNumberTextField, passwordTextField,
                          checkPasswordTextField, makeAccountButton)
@@ -98,6 +104,30 @@ extension SignUpVC {
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(checkPasswordTextField.snp.bottom).offset(30)
             make.height.equalTo(width * (44/375))
+        }
+    }
+    
+    private func presentToOnBoardingView() {
+        let nextVC = onBoardingVC()
+        nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
+    
+    @objc
+    private func touchUpInside() {
+        presentToOnBoardingView()
+    }
+    
+    @objc
+    private func textFieldDidChange() {
+        if emailNumberTextField.hasText,
+           passwordTextField.hasText,
+           checkPasswordTextField.hasText {
+            makeAccountButton.isEnabled = true
+            makeAccountButton.backgroundColor = .kakaoLogin
+        } else {
+            makeAccountButton.isEnabled = false
+            makeAccountButton.backgroundColor = .systemGray6
         }
     }
 }
