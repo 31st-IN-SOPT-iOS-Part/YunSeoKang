@@ -21,6 +21,6 @@ struct I18N {
         static let newAccount = "새로운 카카오계정 만들기"
         static let findAccount = "카카오계정 또는 비밀번호 찾기"
         static let checkPassword = "비밀번호 확인"
-        static let startBtn = "확인"
+        static let startKakaoButton = "확인"
     }
 }

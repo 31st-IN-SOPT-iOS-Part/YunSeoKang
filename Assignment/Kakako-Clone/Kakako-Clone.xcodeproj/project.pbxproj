@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		13B302A178E87D374F1D9314 /* Pods_Kakako_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */; };
+		3B0B895F28E896E9000EF813 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B895E28E896E9000EF813 /* Colors.xcassets */; };
+		3B0B896128E89801000EF813 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B896028E89801000EF813 /* UIColor+.swift */; };
+		3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B896228E8992B000EF813 /* UIStackView+.swift */; };
 		3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73428E8743400C9E91C /* AppDelegate.swift */; };
 		3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73628E8743400C9E91C /* SceneDelegate.swift */; };
-		3B15E73928E8743400C9E91C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73828E8743400C9E91C /* LoginVC.swift */; };
 		3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73D28E8743500C9E91C /* Assets.xcassets */; };
 		3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */; };
 		3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF267B428E87EDA002EFE1D /* Main.storyboard */; };
 		3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B628E88321002EFE1D /* SignUpVC.swift */; };
 		3BF267B928E883B3002EFE1D /* onBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B828E883B3002EFE1D /* onBoardingVC.swift */; };
 		3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267BD28E88658002EFE1D /* StringLiterals.swift */; };
+		3BF267C128E888F7002EFE1D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267C028E888F7002EFE1D /* UIView+.swift */; };
+		3BF267C328E890F6002EFE1D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267C228E890F6002EFE1D /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0B895E28E896E9000EF813 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3B0B896028E89801000EF813 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		3B0B896228E8992B000EF813 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		3B15E73128E8743400C9E91C /* Kakako-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kakako-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B15E73428E8743400C9E91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B15E73628E8743400C9E91C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B15E73828E8743400C9E91C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3B15E73D28E8743500C9E91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B15E74028E8743500C9E91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B15E74228E8743500C9E91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +37,8 @@
 		3BF267B628E88321002EFE1D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3BF267B828E883B3002EFE1D /* onBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingVC.swift; sourceTree = "<group>"; };
 		3BF267BD28E88658002EFE1D /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
+		3BF267C028E888F7002EFE1D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		3BF267C228E890F6002EFE1D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6E63AC4FEC2FE2C07CEA2441 /* Pods-Kakako-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		D97535201AC86DDE4705DC1A /* Pods-Kakako-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.release.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kakako_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +107,7 @@
 		3BF267B328E87E76002EFE1D /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				3B15E73828E8743400C9E91C /* LoginVC.swift */,
+				3BF267C228E890F6002EFE1D /* LoginVC.swift */,
 				3BF267B628E88321002EFE1D /* SignUpVC.swift */,
 				3BF267B828E883B3002EFE1D /* onBoardingVC.swift */,
 			);
@@ -109,6 +117,7 @@
 		3BF267BA28E88621002EFE1D /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				3BF267BF28E888E8002EFE1D /* Extensions */,
 				3BF267BC28E88642002EFE1D /* Literals */,
 				3BF267BB28E88639002EFE1D /* Resources */,
 			);
@@ -119,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3B15E73D28E8743500C9E91C /* Assets.xcassets */,
+				3B0B895E28E896E9000EF813 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -129,6 +139,16 @@
 				3BF267BD28E88658002EFE1D /* StringLiterals.swift */,
 			);
 			path = Literals;
+			sourceTree = "<group>";
+		};
+		3BF267BF28E888E8002EFE1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BF267C028E888F7002EFE1D /* UIView+.swift */,
+				3B0B896028E89801000EF813 /* UIColor+.swift */,
+				3B0B896228E8992B000EF813 /* UIStackView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		85D397B0A1622E133F372F59 /* Frameworks */ = {
@@ -209,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */,
+				3B0B895F28E896E9000EF813 /* Colors.xcassets in Resources */,
 				3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */,
 				3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */,
 			);
@@ -264,10 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */,
+				3B0B896128E89801000EF813 /* UIColor+.swift in Sources */,
 				3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */,
-				3B15E73928E8743400C9E91C /* LoginVC.swift in Sources */,
+				3BF267C328E890F6002EFE1D /* LoginVC.swift in Sources */,
+				3BF267C128E888F7002EFE1D /* UIView+.swift in Sources */,
 				3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */,
 				3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */,
+				3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */,
 				3BF267B928E883B3002EFE1D /* onBoardingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

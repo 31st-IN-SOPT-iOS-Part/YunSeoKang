@@ -19,8 +19,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
+            window.backgroundColor = .white
             
-            let rootVC = LoginVC()
+            let rootVC = onBoardingVC()
             
             window.rootViewController = rootVC
             window.makeKeyAndVisible()
