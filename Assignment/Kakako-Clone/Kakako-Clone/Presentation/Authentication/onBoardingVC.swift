@@ -13,10 +13,12 @@ class onBoardingVC: UIViewController {
     var name: String?
 
     //MARK: UI Components
-    private let welcomeLabel: UILabel = {
+    private lazy var welcomeLabel: UILabel = {
         let lb = UILabel()
-        lb.text = "님 환영합니다"
-        lb.font = .systemFont(ofSize: 20, weight: .medium)
+        lb.text = "\(name ?? "")님\n환영합니다"
+        lb.numberOfLines = 2
+        lb.textAlignment = .center
+        lb.font = .systemFont(ofSize: 22, weight: .medium)
         return lb
     }()
     

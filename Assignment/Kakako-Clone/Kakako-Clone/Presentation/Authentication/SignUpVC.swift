@@ -110,6 +110,11 @@ extension SignUpVC {
     private func presentToOnBoardingView() {
         let nextVC = onBoardingVC()
         nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        
+        if let id = emailNumberTextField.text {
+            nextVC.name = id
+        }
+        
         self.present(nextVC, animated: true, completion: nil)
     }
     

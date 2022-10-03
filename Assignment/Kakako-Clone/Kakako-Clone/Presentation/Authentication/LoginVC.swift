@@ -143,6 +143,10 @@ extension LoginVC {
     private func presentToOnboardingView() {
         let nextVC = onBoardingVC()
         nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        
+        if let id = emailNumberTextField.text {
+            nextVC.name = id
+        }
         self.present(nextVC, animated: true)
     }
     
