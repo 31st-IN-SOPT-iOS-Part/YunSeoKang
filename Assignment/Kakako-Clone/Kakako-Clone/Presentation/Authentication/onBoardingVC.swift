@@ -66,9 +66,10 @@ extension onBoardingVC {
     }
     
     private func dismissOnboarding() {
-        self.dismiss(animated: true) {
-            self.navigationController?.popToRootViewController(animated: true)
-        }
+        let beforeVC = self.presentingViewController
+        guard let mainVC = beforeVC as? UINavigationController else {return}
+        mainVC.popToRootViewController(animated: true)
+        self.dismiss(animated: true)
     }
     
     @objc
