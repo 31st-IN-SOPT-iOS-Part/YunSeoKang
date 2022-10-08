@@ -17,8 +17,6 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        
         setUI()
         setLayout()
     }
@@ -28,6 +26,7 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController {
     private func setUI() {
+        view.backgroundColor = .white
         firstView.backgroundColor = .systemGray3
         secondView.backgroundColor = .systemRed
         thirdView.backgroundColor = .systemPink
@@ -43,19 +42,19 @@ extension SecondViewController {
         
         firstView.snp.makeConstraints { make in
             make.top.equalToSuperview()
-            make.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            make.directionalHorizontalEdges.equalTo(self.view.safeAreaLayoutGuide)
             make.height.equalTo(337)
         }
         
         secondView.snp.makeConstraints { make in
             make.top.equalTo(self.firstView.snp.bottom).offset(45)
-            make.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            make.directionalHorizontalEdges.equalTo(self.view.safeAreaLayoutGuide)
             make.height.equalTo(337)
         }
         
         thirdView.snp.makeConstraints { make in
             make.top.equalTo(self.secondView.snp.bottom).offset(45)
-            make.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
+            make.directionalHorizontalEdges.equalTo(self.view.safeAreaLayoutGuide)
             make.height.equalTo(337)
             make.bottom.equalToSuperview().offset(-45)
         }
