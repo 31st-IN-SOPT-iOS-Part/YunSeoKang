@@ -10,6 +10,7 @@
 		3B1678ED28F33487008D18AC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1678EC28F33487008D18AC /* ThirdViewController.swift */; };
 		3B1678EF28F337D9008D18AC /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1678EE28F337D9008D18AC /* Int+.swift */; };
 		3B1678F128F33ACF008D18AC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1678F028F33ACF008D18AC /* UIStackView+.swift */; };
+		3B1678F328F33FD4008D18AC /* MelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1678F228F33FD4008D18AC /* MelonViewController.swift */; };
 		3BD2AF1728F11E7D00D6CCB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2AF1628F11E7D00D6CCB4 /* AppDelegate.swift */; };
 		3BD2AF1928F11E7D00D6CCB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2AF1828F11E7D00D6CCB4 /* SceneDelegate.swift */; };
 		3BD2AF1B28F11E7D00D6CCB4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2AF1A28F11E7D00D6CCB4 /* FirstViewController.swift */; };
@@ -23,6 +24,7 @@
 		3B1678EC28F33487008D18AC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3B1678EE28F337D9008D18AC /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		3B1678F028F33ACF008D18AC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		3B1678F228F33FD4008D18AC /* MelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonViewController.swift; sourceTree = "<group>"; };
 		3BD2AF1328F11E7D00D6CCB4 /* 2nd_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2nd_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD2AF1628F11E7D00D6CCB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BD2AF1828F11E7D00D6CCB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				3BD2AF1A28F11E7D00D6CCB4 /* FirstViewController.swift */,
 				3BD2AF3028F140FA00D6CCB4 /* SecondViewController.swift */,
 				3B1678EC28F33487008D18AC /* ThirdViewController.swift */,
+				3B1678F228F33FD4008D18AC /* MelonViewController.swift */,
 				3BD2AF1F28F11E7D00D6CCB4 /* Assets.xcassets */,
 				3BD2AF2428F11E7D00D6CCB4 /* Info.plist */,
 			);
@@ -167,6 +170,7 @@
 				3BD2AF3128F140FA00D6CCB4 /* SecondViewController.swift in Sources */,
 				3B1678ED28F33487008D18AC /* ThirdViewController.swift in Sources */,
 				3B1678EF28F337D9008D18AC /* Int+.swift in Sources */,
+				3B1678F328F33FD4008D18AC /* MelonViewController.swift in Sources */,
 				3BD2AF1928F11E7D00D6CCB4 /* SceneDelegate.swift in Sources */,
 				3B1678F128F33ACF008D18AC /* UIStackView+.swift in Sources */,
 			);
