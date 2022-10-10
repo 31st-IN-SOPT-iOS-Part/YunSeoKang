@@ -7,44 +7,44 @@
 
 import UIKit
 
-class SignUpVC: UIViewController {
+final class SignUpVC: UIViewController {
     
     //MARK: Properties
-    let width = UIScreen.main.bounds.width
+    private let width = UIScreen.main.bounds.width
 
     //MARK: UI Components
     private let startKakao: UILabel = {
-        let lb = UILabel()
-        lb.text = I18N.Auth.startKakao
-        lb.textColor = .black
-        lb.font = .systemFont(ofSize: 22, weight: .medium)
-        return lb
+        let label = UILabel()
+        label.text = I18N.Auth.startKakao
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 22, weight: .medium)
+        return label
     }()
     
     private let emailNumberTextField: AuthTextField = {
-        let tf = AuthTextField()
-        tf.placeholder = I18N.Auth.emailOrPhone
-        return tf
+        let textField = AuthTextField()
+        textField.placeholder = I18N.Auth.emailOrPhone
+        return textField
     }()
     
     private let passwordTextField: AuthTextField = {
-        let tf = AuthTextField()
-        tf.placeholder = I18N.Auth.password
-        tf.isSecureTextEntry = true
-        return tf
+        let textField = AuthTextField()
+        textField.placeholder = I18N.Auth.password
+        textField.isSecureTextEntry = true
+        return textField
     }()
     
     private let checkPasswordTextField: AuthTextField = {
-        let tf = AuthTextField()
-        tf.placeholder = I18N.Auth.checkPassword
-        tf.isSecureTextEntry = true
-        return tf
+        let textField = AuthTextField()
+        textField.placeholder = I18N.Auth.checkPassword
+        textField.isSecureTextEntry = true
+        return textField
     }()
     
     private let makeAccountButton: AuthButton = {
-        let btn = AuthButton()
-        btn.setTitle(I18N.Auth.newAccount, for: .normal)
-        return btn
+        let button = AuthButton()
+        button.setTitle(I18N.Auth.newAccount, for: .normal)
+        return button
     }()
     
     //MARK: View Life Cycle
@@ -108,7 +108,7 @@ extension SignUpVC {
     }
     
     private func presentToOnBoardingView() {
-        let nextVC = onBoardingVC()
+        let nextVC = OnBoardingVC()
         nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
         
         if let id = emailNumberTextField.text {

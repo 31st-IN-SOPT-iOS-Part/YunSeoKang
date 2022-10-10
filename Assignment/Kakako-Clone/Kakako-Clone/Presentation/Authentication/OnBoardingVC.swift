@@ -7,27 +7,27 @@
 
 import UIKit
 
-class onBoardingVC: UIViewController {
+final class OnBoardingVC: UIViewController {
     
     //MARK: Properties
     var name: String?
 
     //MARK: UI Components
     private lazy var welcomeLabel: UILabel = {
-        let lb = UILabel()
-        lb.text = "\(name ?? "")님\n환영합니다"
-        lb.numberOfLines = 2
-        lb.textAlignment = .center
-        lb.font = .systemFont(ofSize: 22, weight: .medium)
-        return lb
+        let label = UILabel()
+        label.text = "\(name ?? "사용자")님\n환영합니다"
+        label.numberOfLines = 2
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 22, weight: .medium)
+        return label
     }()
     
     private let checkButton: AuthButton = {
-        let btn = AuthButton()
-        btn.setTitle(I18N.Auth.checkButton, for: .normal)
-        btn.backgroundColor = .kakaoLogin
-        btn.isEnabled = true
-        return btn
+        let button = AuthButton()
+        button.setTitle(I18N.Auth.checkButton, for: .normal)
+        button.backgroundColor = .kakaoLogin
+        button.isEnabled = true
+        return button
     }()
     
     //MARK: View Life Cycle
@@ -40,7 +40,7 @@ class onBoardingVC: UIViewController {
 }
 
 //MARK: Extension
-extension onBoardingVC {
+extension OnBoardingVC {
     private func setUI() {
         view.backgroundColor = .white
     }

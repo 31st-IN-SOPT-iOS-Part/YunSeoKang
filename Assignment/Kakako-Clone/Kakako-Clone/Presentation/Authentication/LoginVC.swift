@@ -8,62 +8,62 @@
 import UIKit
 import SnapKit
 
-class LoginVC: UIViewController {
+final class LoginVC: UIViewController {
     
     //MARK: Properties
-    let width = UIScreen.main.bounds.width
+    private let width = UIScreen.main.bounds.width
     
     //MARK: UI Components
-    private let startKakao: UILabel = {
-        let lb = UILabel()
-        lb.text = I18N.Auth.startKakao
-        lb.textColor = .black
-        lb.font = .systemFont(ofSize: 22, weight: .medium)
-        return lb
+    private let startKakaoLabel: UILabel = {
+        let label = UILabel()
+        label.text = I18N.Auth.startKakao
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 22, weight: .medium)
+        return label
     }()
     
     private let descriptionLogin: UILabel = {
-        let lb = UILabel()
-        lb.text = I18N.Auth.loginDescription
-        lb.textColor = .systemGray
-        lb.numberOfLines = 2
-        lb.font = .systemFont(ofSize: 12, weight: .regular)
-        lb.textAlignment = .center
-        return lb
+        let label = UILabel()
+        label.text = I18N.Auth.loginDescription
+        label.textColor = .systemGray
+        label.numberOfLines = 2
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.textAlignment = .center
+        return label
     }()
     
     private let emailNumberTextField: AuthTextField = {
-        let tf = AuthTextField()
-        tf.placeholder = I18N.Auth.emailOrPhone
-        return tf
+        let textField = AuthTextField()
+        textField.placeholder = I18N.Auth.emailOrPhone
+        return textField
     }()
     
     private let passwordTextField: AuthTextField = {
-        let tf = AuthTextField()
-        tf.placeholder = I18N.Auth.password
-        tf.isSecureTextEntry = true
-        return tf
+        let textField = AuthTextField()
+        textField.placeholder = I18N.Auth.password
+        textField.isSecureTextEntry = true
+        return textField
     }()
     
     private let kakaoLoginButton: AuthButton = {
-        let btn = AuthButton()
-        btn.setTitle(I18N.Auth.loginKakao, for: .normal)
-        return btn
+        let button = AuthButton()
+        button.setTitle(I18N.Auth.loginKakao, for: .normal)
+        return button
     }()
     
     private lazy var makeAccountButton: AuthButton = {
-        let btn = AuthButton()
-        btn.setTitle(I18N.Auth.newAccount, for: .normal)
-        btn.isEnabled = true
-        return btn
+        let button = AuthButton()
+        button.setTitle(I18N.Auth.newAccount, for: .normal)
+        button.isEnabled = true
+        return button
     }()
     
     private let findAccountLabel: UILabel = {
-        let lb = UILabel()
-        lb.text = I18N.Auth.findAccount
-        lb.textColor = .black
-        lb.font = .systemFont(ofSize: 12, weight: .regular)
-        return lb
+        let label = UILabel()
+        label.text = I18N.Auth.findAccount
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 12, weight: .regular)
+        return label
     }()
     
     //MARK: View Life Cycle
@@ -89,15 +89,15 @@ extension LoginVC {
     }
     
     private func setLayout() {
-        view.addSubViews(startKakao, descriptionLogin, emailNumberTextField, passwordTextField, kakaoLoginButton, makeAccountButton, findAccountLabel)
+        view.addSubViews(startKakaoLabel, descriptionLogin, emailNumberTextField, passwordTextField, kakaoLoginButton, makeAccountButton, findAccountLabel)
         
-        startKakao.snp.makeConstraints { make in
+        startKakaoLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).inset(60)
             make.centerX.equalToSuperview()
         }
         
         descriptionLogin.snp.makeConstraints { make in
-            make.top.equalTo(startKakao.snp.bottom).offset(20)
+            make.top.equalTo(startKakaoLabel.snp.bottom).offset(20)
             make.centerX.equalToSuperview()
         }
         
@@ -141,7 +141,7 @@ extension LoginVC {
     }
     
     private func presentToOnboardingView() {
-        let nextVC = onBoardingVC()
+        let nextVC = OnBoardingVC()
         nextVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
         
         if let id = emailNumberTextField.text {
