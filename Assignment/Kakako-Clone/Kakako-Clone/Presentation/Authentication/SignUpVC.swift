@@ -17,7 +17,7 @@ final class SignUpVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.startKakao
         label.textColor = .black
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     

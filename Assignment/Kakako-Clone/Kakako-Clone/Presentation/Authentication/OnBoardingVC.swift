@@ -18,7 +18,7 @@ final class OnBoardingVC: UIViewController {
         label.text = "\(name ?? "사용자")님\n환영합니다"
         label.numberOfLines = 2
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     

@@ -18,7 +18,7 @@ final class LoginVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.startKakao
         label.textColor = .black
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     
@@ -27,7 +27,7 @@ final class LoginVC: UIViewController {
         label.text = I18N.Auth.loginDescription
         label.textColor = .systemGray
         label.numberOfLines = 2
-        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.font = .AppleSDGothicNeoRegular(ofSize: 12)
         label.textAlignment = .center
         return label
     }()
@@ -62,7 +62,7 @@ final class LoginVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.findAccount
         label.textColor = .black
-        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.font = .AppleSDGothicNeoRegular(ofSize: 12)
         return label
     }()
     
