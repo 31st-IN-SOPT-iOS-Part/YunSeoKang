@@ -69,10 +69,11 @@ extension OnBoardingVC {
     }
     
     private func pushToTabBar() {
-        let TabBarController = UINavigationController(rootViewController: KakaotalkTabBarController())
-        
-        TabBarController.modalPresentationStyle = .fullScreen
-        self.present(TabBarController, animated: true)
+        let presentingVC = self.presentingViewController
+        let TabBarController = KakaotalkTabBarController()
+        self.navigationController?.pushViewController(TabBarController, animated: true)
+        self.navigationController?.isNavigationBarHidden = true
+        presentingVC?.view.window?.rootViewController = TabBarController
     }
     
     @objc

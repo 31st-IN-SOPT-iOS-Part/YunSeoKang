@@ -23,6 +23,7 @@ extension KakaotalkTabBarController {
                             renderingMode: UIImage.RenderingMode) -> UIViewController {
         
         let tab = UINavigationController(rootViewController: viewController)
+        tab.isNavigationBarHidden = true
         tab.tabBarItem = UITabBarItem(title: "",
                                       image: tabBarImg.withRenderingMode(renderingMode),
                                       selectedImage: tabBarSelectedImg.withRenderingMode(renderingMode))
