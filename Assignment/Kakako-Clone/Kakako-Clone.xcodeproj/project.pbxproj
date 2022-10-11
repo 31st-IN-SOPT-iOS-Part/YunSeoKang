@@ -19,12 +19,17 @@
 		3B96CA6828F495AC00F343CB /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96CA6728F495AC00F343CB /* UIFont+.swift */; };
 		3BBF653F28E974F900224A05 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF653E28E974F900224A05 /* AuthTextField.swift */; };
 		3BBF654128E9769C00224A05 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF654028E9769C00224A05 /* AuthButton.swift */; };
-		3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF267B428E87EDA002EFE1D /* Main.storyboard */; };
 		3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B628E88321002EFE1D /* SignUpVC.swift */; };
 		3BF267B928E883B3002EFE1D /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267B828E883B3002EFE1D /* OnBoardingVC.swift */; };
 		3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267BD28E88658002EFE1D /* StringLiterals.swift */; };
 		3BF267C128E888F7002EFE1D /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267C028E888F7002EFE1D /* UIView+.swift */; };
 		3BF267C328E890F6002EFE1D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF267C228E890F6002EFE1D /* LoginVC.swift */; };
+		3BFAE3DD28F577D5004ADC2D /* KakaotalkTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3DC28F577D5004ADC2D /* KakaotalkTabBarController.swift */; };
+		3BFAE3DF28F57E58004ADC2D /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3DE28F57E58004ADC2D /* FriendViewController.swift */; };
+		3BFAE3E228F57E73004ADC2D /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3E128F57E73004ADC2D /* TalkViewController.swift */; };
+		3BFAE3E528F57E87004ADC2D /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3E428F57E87004ADC2D /* ViewViewController.swift */; };
+		3BFAE3E828F57E9D004ADC2D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3E728F57E9D004ADC2D /* ShopViewController.swift */; };
+		3BFAE3EB28F57EAC004ADC2D /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAE3EA28F57EAC004ADC2D /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +46,17 @@
 		3B96CA6728F495AC00F343CB /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		3BBF653E28E974F900224A05 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		3BBF654028E9769C00224A05 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
-		3BF267B428E87EDA002EFE1D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3BF267B628E88321002EFE1D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		3BF267B828E883B3002EFE1D /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
 		3BF267BD28E88658002EFE1D /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
 		3BF267C028E888F7002EFE1D /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3BF267C228E890F6002EFE1D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3BFAE3DC28F577D5004ADC2D /* KakaotalkTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaotalkTabBarController.swift; sourceTree = "<group>"; };
+		3BFAE3DE28F57E58004ADC2D /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		3BFAE3E128F57E73004ADC2D /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		3BFAE3E428F57E87004ADC2D /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
+		3BFAE3E728F57E9D004ADC2D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		3BFAE3EA28F57EAC004ADC2D /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6E63AC4FEC2FE2C07CEA2441 /* Pods-Kakako-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		D97535201AC86DDE4705DC1A /* Pods-Kakako-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakako-Clone.release.xcconfig"; path = "Target Support Files/Pods-Kakako-Clone/Pods-Kakako-Clone.release.xcconfig"; sourceTree = "<group>"; };
 		F8C9F3A6B5FC18B90F833618 /* Pods_Kakako_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kakako_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +98,6 @@
 				3BF267B228E87CB1002EFE1D /* Presentation */,
 				3BF267B128E87C56002EFE1D /* Application */,
 				3BF267BA28E88621002EFE1D /* Global */,
-				3BF267B428E87EDA002EFE1D /* Main.storyboard */,
 				3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */,
 				3B15E74228E8743500C9E91C /* Info.plist */,
 			);
@@ -99,6 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				3B96CA6A28F4A62F00F343CB /* FriendTab */,
+				3BFAE3E028F57E64004ADC2D /* TalkTab */,
+				3BFAE3E328F57E7C004ADC2D /* ViewTab */,
+				3BFAE3E628F57E8D004ADC2D /* ShopTab */,
+				3BFAE3E928F57EA1004ADC2D /* SettingTab */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 		3B96CA6A28F4A62F00F343CB /* FriendTab */ = {
 			isa = PBXGroup;
 			children = (
+				3BFAE3DE28F57E58004ADC2D /* FriendViewController.swift */,
 			);
 			path = FriendTab;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 		3BF267B228E87CB1002EFE1D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3BFAE3DB28F5739B004ADC2D /* TabBar */,
 				3BBF653D28E974E300224A05 /* Common */,
 				3B96CA6928F4A51300F343CB /* Main */,
 				3BF267B328E87E76002EFE1D /* Authentication */,
@@ -185,6 +200,46 @@
 				3B96CA6728F495AC00F343CB /* UIFont+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3BFAE3DB28F5739B004ADC2D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAE3DC28F577D5004ADC2D /* KakaotalkTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3BFAE3E028F57E64004ADC2D /* TalkTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAE3E128F57E73004ADC2D /* TalkViewController.swift */,
+			);
+			path = TalkTab;
+			sourceTree = "<group>";
+		};
+		3BFAE3E328F57E7C004ADC2D /* ViewTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAE3E428F57E87004ADC2D /* ViewViewController.swift */,
+			);
+			path = ViewTab;
+			sourceTree = "<group>";
+		};
+		3BFAE3E628F57E8D004ADC2D /* ShopTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAE3E728F57E9D004ADC2D /* ShopViewController.swift */,
+			);
+			path = ShopTab;
+			sourceTree = "<group>";
+		};
+		3BFAE3E928F57EA1004ADC2D /* SettingTab */ = {
+			isa = PBXGroup;
+			children = (
+				3BFAE3EA28F57EAC004ADC2D /* SettingViewController.swift */,
+			);
+			path = SettingTab;
 			sourceTree = "<group>";
 		};
 		85D397B0A1622E133F372F59 /* Frameworks */ = {
@@ -264,7 +319,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF267B528E87EDA002EFE1D /* Main.storyboard in Resources */,
 				3B0B895F28E896E9000EF813 /* Colors.xcassets in Resources */,
 				3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */,
 				3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */,
@@ -322,17 +376,23 @@
 			files = (
 				3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */,
 				3BBF653F28E974F900224A05 /* AuthTextField.swift in Sources */,
+				3BFAE3E828F57E9D004ADC2D /* ShopViewController.swift in Sources */,
 				3B0B896128E89801000EF813 /* UIColor+.swift in Sources */,
 				3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */,
 				3B96CA6828F495AC00F343CB /* UIFont+.swift in Sources */,
+				3BFAE3DD28F577D5004ADC2D /* KakaotalkTabBarController.swift in Sources */,
 				3BF267C328E890F6002EFE1D /* LoginVC.swift in Sources */,
 				3B190F3B28F4A66F007F9183 /* ImageLiterals.swift in Sources */,
 				3BF267C128E888F7002EFE1D /* UIView+.swift in Sources */,
+				3BFAE3DF28F57E58004ADC2D /* FriendViewController.swift in Sources */,
 				3BBF654128E9769C00224A05 /* AuthButton.swift in Sources */,
 				3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */,
 				3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */,
 				3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */,
+				3BFAE3E228F57E73004ADC2D /* TalkViewController.swift in Sources */,
+				3BFAE3EB28F57EAC004ADC2D /* SettingViewController.swift in Sources */,
 				3BF267B928E883B3002EFE1D /* OnBoardingVC.swift in Sources */,
+				3BFAE3E528F57E87004ADC2D /* ViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +537,6 @@
 				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +565,6 @@
 				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

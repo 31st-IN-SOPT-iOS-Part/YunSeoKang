@@ -47,6 +47,7 @@ extension OnBoardingVC {
     
     private func setAddTarget() {
         checkButton.addTarget(self, action: #selector(touchCheckButton), for: .touchUpInside)
+        
     }
     
     private func setLayout() {
@@ -67,15 +68,15 @@ extension OnBoardingVC {
         }
     }
     
-    private func dismissOnboarding() {
-        let beforeVC = self.presentingViewController
-        guard let mainVC = beforeVC as? UINavigationController else {return}
-        mainVC.popToRootViewController(animated: true)
-        self.dismiss(animated: true)
+    private func pushToTabBar() {
+        let TabBarController = UINavigationController(rootViewController: KakaotalkTabBarController())
+        
+        TabBarController.modalPresentationStyle = .fullScreen
+        self.present(TabBarController, animated: true)
     }
     
     @objc
     private func touchCheckButton() {
-        dismissOnboarding()
+        pushToTabBar()
     }
 }
