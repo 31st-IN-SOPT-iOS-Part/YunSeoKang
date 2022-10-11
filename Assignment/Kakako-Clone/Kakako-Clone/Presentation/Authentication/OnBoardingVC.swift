@@ -11,6 +11,7 @@ final class OnBoardingVC: UIViewController {
     
     //MARK: Properties
     var name: String?
+    private let width = UIScreen.main.bounds.width
 
     //MARK: UI Components
     private lazy var welcomeLabel: UILabel = {
@@ -58,13 +59,11 @@ extension OnBoardingVC {
             make.top.equalToSuperview().inset(230)
         }
         
-        let width = UIScreen.main.bounds.width
-        
         checkButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(welcomeLabel.snp.bottom).offset(100)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
     }
     

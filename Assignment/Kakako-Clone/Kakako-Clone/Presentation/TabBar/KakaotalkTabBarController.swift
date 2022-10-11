@@ -56,7 +56,7 @@ extension KakaotalkTabBarController {
         
         self.setViewControllers(tabs, animated: false)
         
-        tabBar.backgroundColor = .white
+        tabBar.backgroundColor = .systemGray6
         tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .black
     }

@@ -24,4 +24,8 @@ struct I18N {
         static let checkPassword = "비밀번호 확인"
         static let checkButton = "확인"
     }
+    
+    struct FriendTab {
+        static let topBarTitle = "친구"
+    }
 }

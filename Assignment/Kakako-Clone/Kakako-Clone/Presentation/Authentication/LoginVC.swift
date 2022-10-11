@@ -105,28 +105,28 @@ extension LoginVC {
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(descriptionLogin.snp.bottom).offset(70)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         passwordTextField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(emailNumberTextField.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         kakaoLoginButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(passwordTextField.snp.bottom).offset(30)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         makeAccountButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(kakaoLoginButton.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         findAccountLabel.snp.makeConstraints { make in
