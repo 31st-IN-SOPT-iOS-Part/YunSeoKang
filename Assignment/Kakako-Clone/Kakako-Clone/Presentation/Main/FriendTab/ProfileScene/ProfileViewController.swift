@@ -10,6 +10,10 @@ import SnapKit
 
 final class ProfileViewController: UIViewController {
     
+    //MARK: Properties
+    var profileViewTranslation = CGPoint(x: 0, y: 0)
+    var profileViewVelocity = CGPoint(x: 0, y: 0)
+    
     //MARK: UIComponents
     private let backgroundImageView = UIImageView()
     
@@ -56,7 +60,7 @@ final class ProfileViewController: UIViewController {
         setUI()
         setLayout()
         setAddTarget()
-        setTapGesture()
+        setGesture()
     }
 }
 
@@ -69,7 +73,7 @@ extension ProfileViewController {
         dismissButton.addTarget(self, action: #selector(dismissToFriendTab), for: .touchUpInside)
     }
     
-    private func setTapGesture() {
+    private func setGesture() {
         let chatButtonGestrue = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
         let editProfileButtonGesture = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
         let kakaoStoryButtonGesture = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
@@ -77,6 +81,8 @@ extension ProfileViewController {
         chattingWithMeStackView.addGestureRecognizer(chatButtonGestrue)
         editProfileStackView.addGestureRecognizer(editProfileButtonGesture)
         kakaoStoryStackView.addGestureRecognizer(kakaoStoryButtonGesture)
+        
+        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(moveProfileViewWithGesture)))
     }
     
     private func setLayout() {
@@ -91,7 +97,7 @@ extension ProfileViewController {
         }
         
         dismissButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).inset(14.adjusted)
+            make.top.equalToSuperview().inset(58.adjusted)
             make.leading.equalToSuperview().inset(14.adjusted)
         }
         
@@ -154,5 +160,30 @@ extension ProfileViewController {
     @objc
     private func didTapStackView(_ sender: UITapGestureRecognizer) {
         print("버튼을 눌렀습니다", sender)
+    }
+    
+    @objc
+    private func moveProfileViewWithGesture(_ sender: UIPanGestureRecognizer) {
+        profileViewTranslation = sender.translation(in: view)
+        profileViewVelocity = sender.velocity(in: view)
+        
+        switch sender.state {
+        case .changed:
+            if profileViewVelocity.y > 0 {
+                UIView.animate(withDuration: 0.1) {
+                    self.view.transform = CGAffineTransform(translationX: 0, y: self.profileViewTranslation.y)
+                }
+            }
+        case .ended:
+            if profileViewTranslation.y < 400 {
+                UIView.animate(withDuration: 0.1) {
+                    self.view.transform = .identity
+                }
+            } else {
+                dismiss(animated: true)
+            }
+        default:
+            break
+        }
     }
 }
