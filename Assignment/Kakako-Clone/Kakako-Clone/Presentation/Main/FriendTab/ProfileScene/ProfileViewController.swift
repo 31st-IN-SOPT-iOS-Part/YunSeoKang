@@ -56,6 +56,7 @@ final class ProfileViewController: UIViewController {
         setUI()
         setLayout()
         setAddTarget()
+        setTapGesture()
     }
 }
 
@@ -66,6 +67,16 @@ extension ProfileViewController {
     
     private func setAddTarget() {
         dismissButton.addTarget(self, action: #selector(dismissToFriendTab), for: .touchUpInside)
+    }
+    
+    private func setTapGesture() {
+        let chatButtonGestrue = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
+        let editProfileButtonGesture = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
+        let kakaoStoryButtonGesture = UITapGestureRecognizer(target: self, action: #selector(didTapStackView))
+        
+        chattingWithMeStackView.addGestureRecognizer(chatButtonGestrue)
+        editProfileStackView.addGestureRecognizer(editProfileButtonGesture)
+        kakaoStoryStackView.addGestureRecognizer(kakaoStoryButtonGesture)
     }
     
     private func setLayout() {
@@ -134,8 +145,14 @@ extension ProfileViewController {
         self.dismiss(animated: true)
     }
     
+    //MARK: objc functions
     @objc
     private func dismissToFriendTab() {
         touchDismissButton()
+    }
+    
+    @objc
+    private func didTapStackView(_ sender: UITapGestureRecognizer) {
+        print("버튼을 눌렀습니다", sender)
     }
 }
