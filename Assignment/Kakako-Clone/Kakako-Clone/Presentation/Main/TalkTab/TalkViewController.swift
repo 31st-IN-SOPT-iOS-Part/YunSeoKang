@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TalkViewController: UIViewController {
+final class TalkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,6 +16,8 @@
 		3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73D28E8743500C9E91C /* Assets.xcassets */; };
 		3B15E74128E8743500C9E91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */; };
 		3B190F3B28F4A66F007F9183 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B190F3A28F4A66F007F9183 /* ImageLiterals.swift */; };
+		3B19C27C28F5D38F006481F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B19C27B28F5D38F006481F3 /* ProfileViewController.swift */; };
+		3B75CDDD28F76ADE00BEF6CE /* adjust+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B75CDDC28F76ADE00BEF6CE /* adjust+.swift */; };
 		3B96CA6828F495AC00F343CB /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96CA6728F495AC00F343CB /* UIFont+.swift */; };
 		3BBF653F28E974F900224A05 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF653E28E974F900224A05 /* AuthTextField.swift */; };
 		3BBF654128E9769C00224A05 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF654028E9769C00224A05 /* AuthButton.swift */; };
@@ -43,6 +45,8 @@
 		3B15E74028E8743500C9E91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B15E74228E8743500C9E91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B190F3A28F4A66F007F9183 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
+		3B19C27B28F5D38F006481F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3B75CDDC28F76ADE00BEF6CE /* adjust+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "adjust+.swift"; sourceTree = "<group>"; };
 		3B96CA6728F495AC00F343CB /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		3BBF653E28E974F900224A05 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		3BBF654028E9769C00224A05 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 			path = "Kakako-Clone";
 			sourceTree = "<group>";
 		};
+		3B19C27A28F5D379006481F3 /* ProfileScene */ = {
+			isa = PBXGroup;
+			children = (
+				3B19C27B28F5D38F006481F3 /* ProfileViewController.swift */,
+			);
+			path = ProfileScene;
+			sourceTree = "<group>";
+		};
 		3B96CA6928F4A51300F343CB /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		3B96CA6A28F4A62F00F343CB /* FriendTab */ = {
 			isa = PBXGroup;
 			children = (
+				3B19C27A28F5D379006481F3 /* ProfileScene */,
 				3BFAE3DE28F57E58004ADC2D /* FriendViewController.swift */,
 			);
 			path = FriendTab;
@@ -198,6 +211,7 @@
 				3B0B896028E89801000EF813 /* UIColor+.swift */,
 				3B0B896228E8992B000EF813 /* UIStackView+.swift */,
 				3B96CA6728F495AC00F343CB /* UIFont+.swift */,
+				3B75CDDC28F76ADE00BEF6CE /* adjust+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +390,7 @@
 			files = (
 				3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */,
 				3BBF653F28E974F900224A05 /* AuthTextField.swift in Sources */,
+				3B19C27C28F5D38F006481F3 /* ProfileViewController.swift in Sources */,
 				3BFAE3E828F57E9D004ADC2D /* ShopViewController.swift in Sources */,
 				3B0B896128E89801000EF813 /* UIColor+.swift in Sources */,
 				3BF267B728E88321002EFE1D /* SignUpVC.swift in Sources */,
@@ -388,6 +403,7 @@
 				3BBF654128E9769C00224A05 /* AuthButton.swift in Sources */,
 				3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */,
 				3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */,
+				3B75CDDD28F76ADE00BEF6CE /* adjust+.swift in Sources */,
 				3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */,
 				3BFAE3E228F57E73004ADC2D /* TalkViewController.swift in Sources */,
 				3BFAE3EB28F57EAC004ADC2D /* SettingViewController.swift in Sources */,

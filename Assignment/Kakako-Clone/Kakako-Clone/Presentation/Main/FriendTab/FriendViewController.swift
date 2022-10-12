@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendViewController: UIViewController {
+final class FriendViewController: UIViewController {
     
     //MARK: Properties
     private let width = UIScreen.main.bounds.width
@@ -38,6 +38,7 @@ class FriendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setAddTarget()
         setLayout()
     }
 }
@@ -45,6 +46,10 @@ class FriendViewController: UIViewController {
 extension FriendViewController {
     private func setUI() {
         view.backgroundColor = .white
+    }
+    
+    private func setAddTarget() {
+        profileButton.addTarget(self, action: #selector(presentProfile), for: .touchUpInside)
     }
     
     private func setLayout() {
@@ -70,6 +75,13 @@ extension FriendViewController {
             make.top.equalTo(naviView.snp.bottom).offset(15)
             make.leading.equalToSuperview().inset(14)
         }
-        
     }
+    
+    @objc
+    private func presentProfile() {
+        let profileVC = ProfileViewController()
+        profileVC.modalPresentationStyle = .overFullScreen
+        self.present(profileVC, animated: true)
+    }
+    
 }
