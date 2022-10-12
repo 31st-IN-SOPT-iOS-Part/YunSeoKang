@@ -28,4 +28,10 @@ struct I18N {
     struct FriendTab {
         static let topBarTitle = "친구"
     }
+    
+    struct Profile {
+        static let chattingWithMe = "나와의 채팅"
+        static let editProfile = "프로필 편집"
+        static let kakaoStory = "카카오스토리"
+    }
 }
