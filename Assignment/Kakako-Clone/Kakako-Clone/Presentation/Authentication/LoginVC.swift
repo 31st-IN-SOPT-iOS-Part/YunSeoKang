@@ -27,7 +27,7 @@ final class LoginVC: UIViewController {
         label.text = I18N.Auth.loginDescription
         label.textColor = .systemGray
         label.numberOfLines = 2
-        label.font = .AppleSDGothicNeoRegular(ofSize: 12)
+        label.font = .AppleSDGothicNeoRegular(ofSize: 15)
         label.textAlignment = .center
         return label
     }()
