@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class SignUpVC: UIViewController {
     
@@ -17,7 +19,7 @@ final class SignUpVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.startKakao
         label.textColor = .black
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     
@@ -82,28 +84,28 @@ extension SignUpVC {
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(startKakao.snp.bottom).offset(100)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         passwordTextField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(emailNumberTextField.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         checkPasswordTextField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(passwordTextField.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         makeAccountButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(checkPasswordTextField.snp.bottom).offset(30)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
     }
     

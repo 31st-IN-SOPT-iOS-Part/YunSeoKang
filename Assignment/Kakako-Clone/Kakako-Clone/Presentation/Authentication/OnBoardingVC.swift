@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class OnBoardingVC: UIViewController {
     
     //MARK: Properties
     var name: String?
+    private let width = UIScreen.main.bounds.width
 
     //MARK: UI Components
     private lazy var welcomeLabel: UILabel = {
@@ -18,7 +21,7 @@ final class OnBoardingVC: UIViewController {
         label.text = "\(name ?? "사용자")님\n환영합니다"
         label.numberOfLines = 2
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     
@@ -47,6 +50,7 @@ extension OnBoardingVC {
     
     private func setAddTarget() {
         checkButton.addTarget(self, action: #selector(touchCheckButton), for: .touchUpInside)
+        
     }
     
     private func setLayout() {
@@ -57,25 +61,23 @@ extension OnBoardingVC {
             make.top.equalToSuperview().inset(230)
         }
         
-        let width = UIScreen.main.bounds.width
-        
         checkButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(welcomeLabel.snp.bottom).offset(100)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
     }
     
-    private func dismissOnboarding() {
-        let beforeVC = self.presentingViewController
-        guard let mainVC = beforeVC as? UINavigationController else {return}
-        mainVC.popToRootViewController(animated: true)
-        self.dismiss(animated: true)
+    private func pushToTabBar() {
+        let TabBarController = KakaotalkTabBarController()
+        if let window = view.window?.windowScene?.keyWindow {
+            window.rootViewController = UINavigationController(rootViewController: TabBarController)
+        }
     }
     
     @objc
     private func touchCheckButton() {
-        dismissOnboarding()
+        pushToTabBar()
     }
 }

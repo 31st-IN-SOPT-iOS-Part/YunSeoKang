@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 final class LoginVC: UIViewController {
     
@@ -18,7 +20,7 @@ final class LoginVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.startKakao
         label.textColor = .black
-        label.font = .systemFont(ofSize: 22, weight: .medium)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     
@@ -27,7 +29,7 @@ final class LoginVC: UIViewController {
         label.text = I18N.Auth.loginDescription
         label.textColor = .systemGray
         label.numberOfLines = 2
-        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.font = .AppleSDGothicNeoRegular(ofSize: 15)
         label.textAlignment = .center
         return label
     }()
@@ -62,7 +64,7 @@ final class LoginVC: UIViewController {
         let label = UILabel()
         label.text = I18N.Auth.findAccount
         label.textColor = .black
-        label.font = .systemFont(ofSize: 12, weight: .regular)
+        label.font = .AppleSDGothicNeoRegular(ofSize: 12)
         return label
     }()
     
@@ -105,28 +107,28 @@ extension LoginVC {
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(descriptionLogin.snp.bottom).offset(70)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         passwordTextField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(emailNumberTextField.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         kakaoLoginButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(passwordTextField.snp.bottom).offset(30)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         makeAccountButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(kakaoLoginButton.snp.bottom).offset(16)
-            make.height.equalTo(width * (44/375))
+            make.height.equalTo(width * (44/width))
         }
         
         findAccountLabel.snp.makeConstraints { make in

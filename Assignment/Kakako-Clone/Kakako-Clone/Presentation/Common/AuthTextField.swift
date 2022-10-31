@@ -32,7 +32,7 @@ class AuthTextField: UITextField {
 extension AuthTextField {
     private func setUI() {
         self.textColor = .black
-        self.font = .systemFont(ofSize: 17, weight: .regular)
+        self.font = .AppleSDGothicNeoRegular(ofSize: 17)
         self.clearButtonMode = .whileEditing
     }
     

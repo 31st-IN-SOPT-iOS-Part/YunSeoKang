@@ -25,5 +25,6 @@ extension AuthButton {
         self.backgroundColor = .systemGray6
         self.layer.cornerRadius = 4
         self.isEnabled = false
+        self.titleLabel?.font = .AppleSDGothicNeoMedium(ofSize: 15)
     }
 }
