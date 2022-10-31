@@ -169,7 +169,7 @@ extension ProfileViewController {
         
         switch sender.state {
         case .changed:
-            if profileViewVelocity.y > 0 {
+            if profileViewTranslation.y > 0 {
                 UIView.animate(withDuration: 0.1) {
                     self.view.transform = CGAffineTransform(translationX: 0, y: self.profileViewTranslation.y)
                 }

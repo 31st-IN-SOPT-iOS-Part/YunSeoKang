@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class OnBoardingVC: UIViewController {
     
@@ -69,11 +71,6 @@ extension OnBoardingVC {
     
     private func pushToTabBar() {
         let TabBarController = KakaotalkTabBarController()
-//        if let window = UIApplication.shared.windows.first {
-//            window.rootViewController = UINavigationController(rootViewController: TabBarController)
-//        }
-        
-        // iOS 15 이상부터
         if let window = view.window?.windowScene?.keyWindow {
             window.rootViewController = UINavigationController(rootViewController: TabBarController)
         }
