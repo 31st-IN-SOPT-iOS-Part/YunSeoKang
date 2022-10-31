@@ -72,7 +72,7 @@ extension OnBoardingVC {
     private func pushToTabBar() {
         let TabBarController = KakaotalkTabBarController()
         if let window = view.window?.windowScene?.keyWindow {
-            window.rootViewController = UINavigationController(rootViewController: TabBarController)
+            window.rootViewController = TabBarController
         }
     }
     

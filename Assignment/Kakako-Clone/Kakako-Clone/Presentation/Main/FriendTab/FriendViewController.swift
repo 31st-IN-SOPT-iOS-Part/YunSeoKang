@@ -18,7 +18,7 @@ final class FriendViewController: UIViewController {
     private let friendLabel: UILabel = {
         let label = UILabel()
         label.text = I18N.FriendTab.topBarTitle
-        label.font = .AppleSDGothicNeoSemiBold(ofSize: 22)
+        label.font = .AppleSDGothicNeoMedium(ofSize: 22)
         return label
     }()
     
