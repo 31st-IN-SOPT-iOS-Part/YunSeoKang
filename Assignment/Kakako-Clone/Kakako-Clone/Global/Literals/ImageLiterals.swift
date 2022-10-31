@@ -10,17 +10,17 @@ import UIKit
 struct ImageLiterals {
     
     struct TabBar {
-        static let friendTab = UIImage(systemName: "person")
-        static let talkTab = UIImage(systemName: "message")
-        static let viewTab = UIImage(systemName: "eye")
-        static let shopTab = UIImage(systemName: "bag")
-        static let settingTab = UIImage(systemName: "ellipsis.circle")
+        static let friendTab = UIImage(named: "friendTabIcon")
+        static let talkTab = UIImage(named: "messageTabIcon")
+        static let searchTab = UIImage(named: "searchTabIcon")
+        static let shopTab = UIImage(named: "shopTabIcon")
+        static let settingTab = UIImage(named: "detailTabIcon")
         
-        static let friendTabSelected = UIImage(systemName: "person.fill")
-        static let talkTabSelected = UIImage(systemName: "message.fill")
-        static let viewTabSelected = UIImage(systemName: "eye.fill")
-        static let shopTabSelected = UIImage(systemName: "bag.fill")
-        static let settingTabSelected = UIImage(systemName: "ellipsis.circle.fill")
+        static let friendTabSelected = UIImage(named: "friendTabIcon_selected")
+        static let talkTabSelected = UIImage(named: "messageTabIcon_selected")
+        static let searchTabSelected = UIImage(named: "searchTabIcon_selected")
+        static let shopTabSelected = UIImage(named: "shopTabIcon_selected")
+        static let settingTabSelected = UIImage(named: "detailTabIcon_selected")
     }
     
     struct FriendTab {

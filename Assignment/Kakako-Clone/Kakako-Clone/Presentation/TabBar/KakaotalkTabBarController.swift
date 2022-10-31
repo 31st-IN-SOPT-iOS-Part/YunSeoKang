@@ -40,8 +40,8 @@ extension KakaotalkTabBarController {
                                  tabBarSelectedImg: ImageLiterals.TabBar.talkTabSelected ?? UIImage(),
                                  renderingMode: .alwaysTemplate)
         let viewTab = makeTabBar(viewController: ViewViewController(),
-                                 tabBarImg: ImageLiterals.TabBar.viewTab ?? UIImage(),
-                                 tabBarSelectedImg: ImageLiterals.TabBar.viewTabSelected ?? UIImage(),
+                                 tabBarImg: ImageLiterals.TabBar.searchTab ?? UIImage(),
+                                 tabBarSelectedImg: ImageLiterals.TabBar.searchTabSelected ?? UIImage(),
                                  renderingMode: .alwaysTemplate)
         let shopTab = makeTabBar(viewController: ShopViewController(),
                                  tabBarImg: ImageLiterals.TabBar.shopTab ?? UIImage(),
