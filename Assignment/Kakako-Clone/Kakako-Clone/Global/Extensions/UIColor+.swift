@@ -19,4 +19,8 @@ extension UIColor {
     @nonobjc class var dividingLine: UIColor {
         return UIColor(red: 159.0 / 255.0, green: 167.0 / 255.0, blue: 173.0 / 255.0, alpha: 1.0)
     }
+    
+    @nonobjc class var statusMessage: UIColor {
+        return UIColor(red: 166.0 / 255.0, green: 166.0 / 255.0, blue: 166.0 / 255.0, alpha: 1.0)
+    }
 }

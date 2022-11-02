@@ -24,11 +24,21 @@ struct ImageLiterals {
     }
     
     struct FriendTab {
-        static let profileImage = UIImage(named: "profileImage")
+        static let profileImage = UIImage(named: "ProfileImage")
         static let settingButton = UIImage(named: "settingsButton")
         static let closeButton = UIImage(named: "profileCloseBtn")
         static let editButton = UIImage(named: "profileEditImg")
         static let storyButton = UIImage(named: "profileStoryImg")
         static let talkButton = UIImage(named: "profileTalkImg")
+        
+        static let profileImage1 = UIImage(named: "profileImage1")
+        static let profileImage2 = UIImage(named: "profileImage2")
+        static let profileImage3 = UIImage(named: "profileImage3")
+        static let profileImage4 = UIImage(named: "profileImage4")
+        static let profileImage5 = UIImage(named: "profileImage5")
+        static let profileImage6 = UIImage(named: "profileImage6")
+        static let profileImage7 = UIImage(named: "profileImage7")
+        static let profileImage8 = UIImage(named: "profileImage8")
+        static let profileImage9 = UIImage(named: "profileImage9")
     }
 }
