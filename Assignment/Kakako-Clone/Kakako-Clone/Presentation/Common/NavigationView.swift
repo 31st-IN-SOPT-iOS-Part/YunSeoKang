@@ -7,14 +7,37 @@
 
 import UIKit
 
+import SnapKit
+import Then
+
 class NavigationView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    public enum ViewType {
+        case FriendTab
+        case ChatTab
     }
-    */
 
+    private let friendTabLabel = UILabel()
+    private let settingButton = UIButton()
+    private var chattingButton = UIButton()
+    private var openChatButton = UIButton()
+    private var plusButton = UIButton()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension NavigationView {
+    private func setLayout() {
+    }
+    
+    private func setUI() {
+        
+    }
 }

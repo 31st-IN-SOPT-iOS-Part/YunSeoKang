@@ -35,7 +35,7 @@ extension KakaotalkTabBarController {
                                    tabBarImg: ImageLiterals.TabBar.friendTab ?? UIImage(),
                                    tabBarSelectedImg: ImageLiterals.TabBar.friendTabSelected ?? UIImage(),
                                    renderingMode: .alwaysTemplate)
-        let talkTab = makeTabBar(viewController: TalkViewController(),
+        let chatTab = makeTabBar(viewController: ChatViewController(),
                                  tabBarImg: ImageLiterals.TabBar.talkTab ?? UIImage(),
                                  tabBarSelectedImg: ImageLiterals.TabBar.talkTabSelected ?? UIImage(),
                                  renderingMode: .alwaysTemplate)
@@ -52,7 +52,7 @@ extension KakaotalkTabBarController {
                                     tabBarSelectedImg: ImageLiterals.TabBar.settingTabSelected ?? UIImage(),
                                     renderingMode: .alwaysTemplate)
         
-        let tabs = [friendTab, talkTab, viewTab, shopTab, settingTab]
+        let tabs = [friendTab, chatTab, viewTab, shopTab, settingTab]
         
         self.setViewControllers(tabs, animated: false)
         
