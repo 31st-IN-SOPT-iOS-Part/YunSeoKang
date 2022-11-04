@@ -41,4 +41,37 @@ struct ImageLiterals {
         static let profileImage8 = UIImage(named: "profileImage8")
         static let profileImage9 = UIImage(named: "profileImage9")
     }
+    
+    struct ChatTab {
+        static let plusButton = UIImage(named: "iconPlus")
+        static let banner = UIImage(named: "Banner")
+    }
+    
+    struct Album {
+        static let closeButton = UIImage(named: "iconClose")
+        static let defaultAlbum = UIImage(named: "defaultGallery")
+        static let albumImage1 = UIImage(named: "galleryImage1")
+        static let albumImage2 = UIImage(named: "galleryImage2")
+        static let albumImage3 = UIImage(named: "galleryImage3")
+        static let albumImage4 = UIImage(named: "galleryImage4")
+        static let albumImage5 = UIImage(named: "galleryImage5")
+        static let albumImage6 = UIImage(named: "galleryImage6")
+        static let albumImage7 = UIImage(named: "galleryImage7")
+        static let albumImage8 = UIImage(named: "galleryImage8")
+        static let albumImage9 = UIImage(named: "galleryImage9")
+        static let albumImage10 = UIImage(named: "galleryImage10")
+        static let albumImage11 = UIImage(named: "galleryImage11")
+        static let albumImage12 = UIImage(named: "galleryImage12")
+        static let albumImage13 = UIImage(named: "galleryImage13")
+        static let albumImage14 = UIImage(named: "galleryImage14")
+        static let albumImage15 = UIImage(named: "galleryImage15")
+        static let albumImage16 = UIImage(named: "galleryImage16")
+        static let albumImage17 = UIImage(named: "galleryImage17")
+        static let albumImage18 = UIImage(named: "galleryImage18")
+        static let albumImage19 = UIImage(named: "galleryImage19")
+        static let albumImage20 = UIImage(named: "galleryImage20")
+        static let albumImage21 = UIImage(named: "galleryImage21")
+        static let albumImage22 = UIImage(named: "galleryImage22")
+        static let albumImage23 = UIImage(named: "galleryImage23")
+    }
 }

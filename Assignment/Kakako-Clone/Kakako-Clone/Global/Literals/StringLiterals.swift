@@ -34,4 +34,9 @@ struct I18N {
         static let editProfile = "프로필 편집"
         static let kakaoStory = "카카오스토리"
     }
+    
+    struct ChatTab {
+        static let chatTitle = "채팅"
+        static let opentChatTitle = "오픈채팅"
+    }
 }
