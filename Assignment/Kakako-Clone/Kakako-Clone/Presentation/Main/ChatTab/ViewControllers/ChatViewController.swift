@@ -7,7 +7,10 @@
 
 import UIKit
 
-final class TalkViewController: UIViewController {
+final class TalkViewController: BaseViewController {
+    
+    //MARK: UIComponents
+    private let talkTabView = TalkTabView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
