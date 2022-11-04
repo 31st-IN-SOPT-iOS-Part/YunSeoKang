@@ -7,23 +7,39 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController {
+import Then
+import SnapKit
+import RxSwift
+import RxCocoa
 
+final class AlbumViewController: BaseViewController {
+    //MARK: Properties
+    var disposeBag = DisposeBag()
+
+    //MARK: UIComponents
+    private let albumView = AlbumView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLayout()
+        bindActionTap()
+    }
+}
 
-        // Do any additional setup after loading the view.
+extension AlbumViewController {
+    private func setLayout() {
+        view.addSubViews(albumView)
+        albumView.snp.makeConstraints{
+            $0.edges.equalToSuperview()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func bindActionTap() {
+        albumView.dismissButton.rx.tap
+            .withUnretained(self)
+            .subscribe { (owner, _) in
+                owner.dismiss(animated: true)
+            }
+            .disposed(by: disposeBag)
     }
-    */
-
 }
