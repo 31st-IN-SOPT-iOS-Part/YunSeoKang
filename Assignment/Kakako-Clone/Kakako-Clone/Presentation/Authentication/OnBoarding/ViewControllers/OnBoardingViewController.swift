@@ -30,17 +30,6 @@ final class OnBoardingViewController: BaseViewController {
 
 //MARK: Extension
 extension OnBoardingViewController {
-    private func bindTapAction() {
-//        onBoardingView.checkButton.rx.tap
-//            .withUnretained(self)
-//            .subscribe(onNext: { owner, _ in
-//                let TabBarController = KakaotalkTabBarController()
-//                if let window = self.window?.windowScene?.keyWindow {
-//                    window.rootViewController = TabBarController
-//                }
-//            })
-    }
-    
     private func setAddTarget() {
         onBoardingView.checkButton.addTarget(self, action: #selector(touchCheckButton), for: .touchUpInside)
         

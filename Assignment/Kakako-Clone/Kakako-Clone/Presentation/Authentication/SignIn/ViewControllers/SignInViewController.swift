@@ -54,7 +54,7 @@ extension SignInViewController {
             .map{!$0.contains(true)}
             .bind { Bool in
                 self.signinView.kakaoLoginButton.isEnabled = Bool
-                self.signinView.kakaoLoginButton.backgroundColor = Bool ? .kakaoLogin : .systemGray6
+                self.signinView.kakaoLoginButton.backgroundColor = Bool ? .kakaoDefault : .systemGray6
             }
             .disposed(by: disposeBag)
     }

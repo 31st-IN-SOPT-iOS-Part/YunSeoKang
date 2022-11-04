@@ -26,7 +26,7 @@ class OnBoardingView: BaseView {
         
         checkButton.do {
             $0.setTitle(I18N.Auth.checkButton, for: .normal)
-            $0.backgroundColor = .kakaoLogin
+            $0.backgroundColor = .kakaoDefault
             $0.isEnabled = true
         }
     }

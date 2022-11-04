@@ -48,7 +48,7 @@ extension SignUpViewController {
             .map{!$0.contains(true)}
             .bind { Bool in
                 self.signUpView.makeAccountButton.isEnabled = Bool
-                self.signUpView.makeAccountButton.backgroundColor = Bool ? .kakaoLogin : .systemGray6
+                self.signUpView.makeAccountButton.backgroundColor = Bool ? .kakaoDefault : .systemGray6
             }
             .disposed(by: disposBag)
     }
