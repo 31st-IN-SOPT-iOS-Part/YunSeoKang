@@ -10,4 +10,5 @@ target 'Kakako-Clone' do
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
   pod 'Then'
+  pod 'Moya', '~> 15.0'
 end
