@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 import SnapKit
 import Then
+import Moya
 
 final class SignUpViewController: BaseViewController {
     //MARK: Properties
@@ -29,6 +30,19 @@ final class SignUpViewController: BaseViewController {
 
 //MARK: Extension
 extension SignUpViewController {
+    func requestSignup() {
+        print("?")
+        guard let email = signUpView.emailNumberTextField.text else { return }
+        guard let password = signUpView.passwordTextField.text else { return }
+        guard let checkPassword = signUpView.checkPasswordTextField.text else { return }
+        
+        SignupAPI.shared.signup(param: SignupRequest(
+            emailOrContact: email,
+            password: password,
+            passwordCheck: checkPassword)) { response, err in
+                print(response as Any)
+            }
+    }
     
     private func bindTapAction() {
         signUpView.makeAccountButton.rx.tap
@@ -37,6 +51,7 @@ extension SignUpViewController {
                 let nextVC = OnBoardingViewController()
                 nextVC.modalPresentationStyle = .overFullScreen
                 owner.present(nextVC, animated: true)
+                self.requestSignup()
             }
             .disposed(by: disposBag)
         

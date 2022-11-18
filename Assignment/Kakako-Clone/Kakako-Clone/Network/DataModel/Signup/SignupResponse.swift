@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignupResponse {
+struct SignupResponse: Codable {
     let id: Int
     let emailOrContact: String
 }
