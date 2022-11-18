@@ -11,6 +11,17 @@
 		3B0B895F28E896E9000EF813 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B895E28E896E9000EF813 /* Colors.xcassets */; };
 		3B0B896128E89801000EF813 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B896028E89801000EF813 /* UIColor+.swift */; };
 		3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B896228E8992B000EF813 /* UIStackView+.swift */; };
+		3B12F08E2927E7D500685015 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F08D2927E7D500685015 /* Environment.swift */; };
+		3B12F0912927F06F00685015 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0902927F06F00685015 /* NetworkLoggerPlugin.swift */; };
+		3B12F0932927F0B100685015 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0922927F0B100685015 /* GeneralResponse.swift */; };
+		3B12F0952927F16D00685015 /* Encodable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0942927F16D00685015 /* Encodable+.swift */; };
+		3B12F0972927F1AB00685015 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0962927F1AB00685015 /* NetworkConstant.swift */; };
+		3B12F0992927F1BF00685015 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0982927F1BF00685015 /* NetworkResult.swift */; };
+		3B12F09B2927F21F00685015 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F09A2927F21F00685015 /* URLConstant.swift */; };
+		3B12F09F2927F3EF00685015 /* SigninRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F09E2927F3EF00685015 /* SigninRequest.swift */; };
+		3B12F0A12927F3F700685015 /* SigninResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0A02927F3F700685015 /* SigninResponse.swift */; };
+		3B12F0A32927F40500685015 /* SigupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0A22927F40500685015 /* SigupRequest.swift */; };
+		3B12F0A52927F41000685015 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B12F0A42927F41000685015 /* SignupResponse.swift */; };
 		3B15E73528E8743400C9E91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73428E8743400C9E91C /* AppDelegate.swift */; };
 		3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B15E73628E8743400C9E91C /* SceneDelegate.swift */; };
 		3B15E73E28E8743500C9E91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E73D28E8743500C9E91C /* Assets.xcassets */; };
@@ -29,6 +40,9 @@
 		3BBF654128E9769C00224A05 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF654028E9769C00224A05 /* AuthButton.swift */; };
 		3BCB2AE92911156600C195B2 /* FriendTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB2AE82911156600C195B2 /* FriendTabView.swift */; };
 		3BCB2AED291119D000C195B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCB2AEC291119D000C195B2 /* ProfileView.swift */; };
+		3BD090802928007700C932AA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0907F2928007700C932AA /* UserService.swift */; };
+		3BD09082292805EA00C932AA /* SigninAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD09081292805EA00C932AA /* SigninAPI.swift */; };
+		3BD09084292805F200C932AA /* SignupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD09083292805F200C932AA /* SignupAPI.swift */; };
 		3BD5A02E2914F9E900673045 /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5A02D2914F9E900673045 /* ChatCollectionViewCell.swift */; };
 		3BD5A0302914FA2000673045 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5A02F2914FA2000673045 /* UICollectionViewRegisterable.swift */; };
 		3BD5A0332914FD1B00673045 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5A0322914FD1B00673045 /* ChatModel.swift */; };
@@ -60,6 +74,17 @@
 		3B0B895E28E896E9000EF813 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3B0B896028E89801000EF813 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		3B0B896228E8992B000EF813 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		3B12F08D2927E7D500685015 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3B12F0902927F06F00685015 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		3B12F0922927F0B100685015 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		3B12F0942927F16D00685015 /* Encodable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+.swift"; sourceTree = "<group>"; };
+		3B12F0962927F1AB00685015 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		3B12F0982927F1BF00685015 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		3B12F09A2927F21F00685015 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		3B12F09E2927F3EF00685015 /* SigninRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRequest.swift; sourceTree = "<group>"; };
+		3B12F0A02927F3F700685015 /* SigninResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninResponse.swift; sourceTree = "<group>"; };
+		3B12F0A22927F40500685015 /* SigupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigupRequest.swift; sourceTree = "<group>"; };
+		3B12F0A42927F41000685015 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
 		3B15E73128E8743400C9E91C /* Kakako-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kakako-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B15E73428E8743400C9E91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B15E73628E8743400C9E91C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +105,9 @@
 		3BBF654028E9769C00224A05 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		3BCB2AE82911156600C195B2 /* FriendTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTabView.swift; sourceTree = "<group>"; };
 		3BCB2AEC291119D000C195B2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3BD0907F2928007700C932AA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3BD09081292805EA00C932AA /* SigninAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAPI.swift; sourceTree = "<group>"; };
+		3BD09083292805F200C932AA /* SignupAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAPI.swift; sourceTree = "<group>"; };
 		3BD5A02D2914F9E900673045 /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BD5A02F2914FA2000673045 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		3BD5A0322914FD1B00673045 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
@@ -122,6 +150,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B12F0882927E77300685015 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3B12F08A2927E78400685015 /* API */,
+				3B12F0892927E77B00685015 /* Base */,
+				3B12F08C2927E79900685015 /* Service */,
+				3B12F08B2927E79100685015 /* DataModel */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3B12F0892927E77B00685015 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3B12F08D2927E7D500685015 /* Environment.swift */,
+				3B12F09A2927F21F00685015 /* URLConstant.swift */,
+				3B12F0902927F06F00685015 /* NetworkLoggerPlugin.swift */,
+				3B12F0922927F0B100685015 /* GeneralResponse.swift */,
+				3B12F0942927F16D00685015 /* Encodable+.swift */,
+				3B12F0962927F1AB00685015 /* NetworkConstant.swift */,
+				3B12F0982927F1BF00685015 /* NetworkResult.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3B12F08A2927E78400685015 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BD09081292805EA00C932AA /* SigninAPI.swift */,
+				3BD09083292805F200C932AA /* SignupAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3B12F08B2927E79100685015 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B12F09C2927F3D400685015 /* Signin */,
+				3B12F09D2927F3DA00685015 /* Signup */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		3B12F08C2927E79900685015 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BD0907F2928007700C932AA /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3B12F09C2927F3D400685015 /* Signin */ = {
+			isa = PBXGroup;
+			children = (
+				3B12F09E2927F3EF00685015 /* SigninRequest.swift */,
+				3B12F0A02927F3F700685015 /* SigninResponse.swift */,
+			);
+			path = Signin;
+			sourceTree = "<group>";
+		};
+		3B12F09D2927F3DA00685015 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				3B12F0A22927F40500685015 /* SigupRequest.swift */,
+				3B12F0A42927F41000685015 /* SignupResponse.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		3B15E72828E8743400C9E91C = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +240,10 @@
 		3B15E73328E8743400C9E91C /* Kakako-Clone */ = {
 			isa = PBXGroup;
 			children = (
-				3BF267B228E87CB1002EFE1D /* Presentation */,
+				3B12F0882927E77300685015 /* Network */,
 				3BF267B128E87C56002EFE1D /* Application */,
 				3BF267BA28E88621002EFE1D /* Global */,
-				3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */,
-				3B15E74228E8743500C9E91C /* Info.plist */,
+				3BF267B228E87CB1002EFE1D /* Presentation */,
 			);
 			path = "Kakako-Clone";
 			sourceTree = "<group>";
@@ -445,6 +541,8 @@
 			children = (
 				3B15E73D28E8743500C9E91C /* Assets.xcassets */,
 				3B0B895E28E896E9000EF813 /* Colors.xcassets */,
+				3B15E73F28E8743500C9E91C /* LaunchScreen.storyboard */,
+				3B15E74228E8743500C9E91C /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -665,7 +763,13 @@
 				3BF267BE28E88658002EFE1D /* StringLiterals.swift in Sources */,
 				3BBF653F28E974F900224A05 /* AuthTextField.swift in Sources */,
 				3B19C27C28F5D38F006481F3 /* ProfileViewController.swift in Sources */,
+				3B12F0A32927F40500685015 /* SigupRequest.swift in Sources */,
+				3B12F09B2927F21F00685015 /* URLConstant.swift in Sources */,
 				3BD5A0302914FA2000673045 /* UICollectionViewRegisterable.swift in Sources */,
+				3BD090802928007700C932AA /* UserService.swift in Sources */,
+				3B12F0972927F1AB00685015 /* NetworkConstant.swift in Sources */,
+				3B12F0A12927F3F700685015 /* SigninResponse.swift in Sources */,
+				3B12F0952927F16D00685015 /* Encodable+.swift in Sources */,
 				3BB4DBD7291050C40085A409 /* BaseViewController.swift in Sources */,
 				3B22370E2914BBE20029D868 /* NavigationView.swift in Sources */,
 				3BD5A04229153A5C00673045 /* AlbumCollectionViewCell.swift in Sources */,
@@ -677,10 +781,14 @@
 				3BD5A0332914FD1B00673045 /* ChatModel.swift in Sources */,
 				3BF267B728E88321002EFE1D /* SignUpViewController.swift in Sources */,
 				3B96CA6828F495AC00F343CB /* UIFont+.swift in Sources */,
+				3B12F09F2927F3EF00685015 /* SigninRequest.swift in Sources */,
 				3BFAE3DD28F577D5004ADC2D /* KakaotalkTabBarController.swift in Sources */,
 				3BD5A03C2915115400673045 /* AlbumViewController.swift in Sources */,
+				3BD09084292805F200C932AA /* SignupAPI.swift in Sources */,
 				3BD5A03529150D3900673045 /* BannerCollectionReusableView.swift in Sources */,
+				3B12F0992927F1BF00685015 /* NetworkResult.swift in Sources */,
 				3BF267C328E890F6002EFE1D /* SignInViewController.swift in Sources */,
+				3B12F0A52927F41000685015 /* SignupResponse.swift in Sources */,
 				3BCB2AED291119D000C195B2 /* ProfileView.swift in Sources */,
 				3BB4DBD5291050B70085A409 /* BaseView.swift in Sources */,
 				3B190F3B28F4A66F007F9183 /* ImageLiterals.swift in Sources */,
@@ -691,13 +799,17 @@
 				3B15E73728E8743400C9E91C /* SceneDelegate.swift in Sources */,
 				3BD5A04429153C4D00673045 /* AlbumModel.swift in Sources */,
 				3B75CDDD28F76ADE00BEF6CE /* adjust+.swift in Sources */,
+				3B12F08E2927E7D500685015 /* Environment.swift in Sources */,
 				3BD5A02E2914F9E900673045 /* ChatCollectionViewCell.swift in Sources */,
 				3B0B896328E8992B000EF813 /* UIStackView+.swift in Sources */,
 				3BFAE3E228F57E73004ADC2D /* ChatViewController.swift in Sources */,
+				3BD09082292805EA00C932AA /* SigninAPI.swift in Sources */,
+				3B12F0932927F0B100685015 /* GeneralResponse.swift in Sources */,
 				3BFAE3EB28F57EAC004ADC2D /* SettingViewController.swift in Sources */,
 				3BF267B928E883B3002EFE1D /* OnBoardingViewController.swift in Sources */,
 				3BCB2AE92911156600C195B2 /* FriendTabView.swift in Sources */,
 				3BFAE3E528F57E87004ADC2D /* ViewViewController.swift in Sources */,
+				3B12F0912927F06F00685015 /* NetworkLoggerPlugin.swift in Sources */,
 				3BB4DBE82910576E0085A409 /* OnBoardingView.swift in Sources */,
 				3BF8F779291231EC004F071F /* ChatTabView.swift in Sources */,
 				3BD635052911841500805307 /* UserModel.swift in Sources */,
@@ -842,11 +954,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://3.34.53.11:8080\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 665TA4D5B9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
+				INFOPLIST_FILE = "Kakako-Clone/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -870,11 +983,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://3.34.53.11:8080\n";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 665TA4D5B9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Kakako-Clone/Info.plist";
+				INFOPLIST_FILE = "Kakako-Clone/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

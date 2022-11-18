@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 import SnapKit
 import Then
+import Moya
 
 final class SignInViewController: BaseViewController {
     
@@ -30,7 +31,16 @@ final class SignInViewController: BaseViewController {
 
 //MARK: Extension
 extension SignInViewController {
-    
+    func requestSignin() {
+        guard let email = signinView.emailNumberTextField.text else { return }
+        guard let password = signinView.passwordTextField.text else { return }
+        
+        SigninAPI.shared.signin(param: SigninRequest(
+            emailOrContact: email,
+            password: password)) { response, err in
+            print(response as Any)
+        }
+    }
     private func bindTapAction() {
         signinView.makeAccountButton.rx.tap
             .withUnretained(self)
@@ -45,6 +55,7 @@ extension SignInViewController {
             .subscribe(onNext: { owner, _ in
                 let nextVC = OnBoardingViewController()
                 owner.navigationController?.pushViewController(nextVC, animated: true)
+                self.requestSignin()
             })
             .disposed(by: disposeBag)
         
